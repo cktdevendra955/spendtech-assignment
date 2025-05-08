@@ -73,6 +73,14 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<ProductDto> searchProducts(String keyword) {
+        List<ProductEntity> products = this.productRepo.searchProductsByKeyword(keyword);
+        List<ProductDto> list =  products.stream().map(product-> ProductUtils.ENTITY_TO_DTO(product))
+                .collect(Collectors.toList());
+        return list;
+    }
+
+    @Override
     public ResponseEntity<?> deleteById(UUID id) {
         Optional<ProductEntity> product = this.productRepo.findById(id);
         if (product.isPresent()){

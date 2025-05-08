@@ -5,7 +5,7 @@ const NavbarUI = () => {
   return (
     <div className="flex flex-wrap place-items-center">
       <section className="relative mx-auto w-full">
-        <nav className="flex justify-between bg-gray-900 text-white w-full">
+        <nav className="flex justify-between shadow-lg w-full">
           <div className="px-5 xl:px-12 py-6 flex w-full items-center">
          
             <button
@@ -18,8 +18,9 @@ const NavbarUI = () => {
                       d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
               </svg>
             </button>
-            <a className="text-3xl font-bold font-heading" href="#">
-              <img className="h-9" src="logo.png" alt="logo" />
+            <a className="text-3xl font-bold font-heading" href="https://github.com/cktdevendra955/spendtech-assignment" target="_blank">
+              {/* <img className="h-9" src="logo.png" alt="logo" /> */}
+              <span className="h-9">GitHub</span>
             </a>
 
           

@@ -1,13 +1,12 @@
 package com.core.spendtech_backend.entity.product;
 
 import com.core.spendtech_backend.entity.BaseEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Lob;
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 
+@Entity
+@Table(name = "ecom_product")
 public class ProductEntity extends BaseEntity {
 
 

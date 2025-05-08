@@ -1,7 +1,7 @@
 import React from "react";
 import CartIcon from "../icons/CartIcon";
 
-const ProductUI = () => {
+const ProductUI = ({product}) => {
   return (
     <>
       <div class="max-w-2xl mx-auto">
@@ -17,13 +17,13 @@ const ProductUI = () => {
           <div class="px-2 pb-2">
             <a href="#">
               <h6 class="text-gray-900 font-semibold tracking-tight dark:text-white">
-                Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
+                {product.title}
               </h6>
             </a>
             
             <div class="flex items-center justify-between mt-3 p-2">
               <span class=" font-bold text-gray-900 dark:text-white">
-                $599
+                {product.price}
               </span>
               <a
                 href="#"

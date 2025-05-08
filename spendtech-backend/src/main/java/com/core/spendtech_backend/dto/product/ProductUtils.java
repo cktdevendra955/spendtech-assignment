@@ -4,6 +4,7 @@ import com.core.spendtech_backend.entity.product.ProductEntity;
 import org.springframework.beans.BeanUtils;
 
 public class ProductUtils {
+    private ProductUtils(){}
 
     public static ProductDto ENTITY_TO_DTO(ProductEntity productEntity){
         ProductDto productDto =new ProductDto();

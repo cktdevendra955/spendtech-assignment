@@ -14,4 +14,6 @@ public interface ProductService {
     ResponseEntity<?> updateById(UUID id, ProductDto productDto);
     ResponseEntity<?> deleteById(UUID id);
 
+    List<ProductDto> searchProducts(String keyword);
+
 }
